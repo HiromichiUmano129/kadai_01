@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+#main {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  #container {
+    text-align: center;
+  }
+  
+  .btn {
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  button,
+  input[type="button"] {
+    width: 30%;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+  
+  button#rock {
+    background-color: #dc143c;
+    border-bottom: solid 4px #8b0000;
+  }
+  
+  button#scissors {
+    background-color: #ffd700;
+    border-bottom: solid 4px #b8860b;
+  }
+  
+  button#paper {
+    background-color: #4676d7;
+    border-bottom: solid 4px #191970;
+  }
+  
+  #rock:disabled,
+  #scissors:disabled,
+  #paper:disabled {
+    background-color: #808080;
+    border-bottom: none;
+  }
+  
+  input[type="button"] {
+    background-color: #b0c4de;
+    border-bottom: solid 4px #708090;
+    width: 40%;
+    padding: 10px;
+    font-size: 30px;
+  }
+  
+  button:active,
+  input[type="button"]:active {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px); /*下に動く*/
+    border-bottom: none; /*線を消す*/
+  }
+  
+  #battle {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  #myHand,
+  #enemyHand {
+    font-size: 20px;
+  }
+  
+  #resultTable {
+    border: 1px solid #ccc;
+    margin: 15px 0;
+  }
+  
+  dl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
+  }
+  
+  dl:last-child {
+    border-bottom: none;
+  }
+  
+  dd {
+    text-align: center;
+    font-size: 20px;
+  }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>じゃんけんアプリ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="main">
+    <div id="container">
+      <h1>じゃんけん10回勝負や！！</h1>
+     
+
+      <div class="btn">
+        <button id="rock" value="0">グー</button>
+        <button id="scissors" value="1">チョキ</button>
+        <button id="paper" value="2">パー</button>
+      </div>
+      
+      <p class="text">第 <span id="gameCount">0</span> 回</p>
+
+      <div id="battle">
+        <p id="myHand">最初はグー！じゃんけんっ！</p>
+        <p id="enemyHand"></p>
+        <h2 id="result"></h2>
+      </div>
+      
+      <p class="text">最終結果</p>
+
+      <div id="resultTable">
+        <dl>
+          <dt class="text">勝利数</dt>
+          <dt class="text">敗北数</dt>
+          <dt class="text">勝率</dt>
+        </dl>
+
+        <dl>
+          <dd id="winCount">ー</dd>
+          <dd id="loseCount">ー</dd>
+          <dd id="winRate">ー</dd>
+        </dl>
+        
+      </div>
+
+      <div id="reset"></div>
+
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
